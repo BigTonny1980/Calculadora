@@ -7,6 +7,6 @@ function limpar() {
    document.getElementById("displayCalculadora").textContent = "";
 }
 
-function calcular() {
-   // Não faço ideia de como fazer o botão de igual funcionar. Suplico por iluminação.
+function calcular(calc) {
+   // E AGORA?
 } 
