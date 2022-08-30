@@ -14,31 +14,29 @@
       <table>
          <tr>
             <td><button class="botaoLimpar" onclick="limpar()">C</button></td>
-            <td><button class="botao" onclick="backspace()">⇚</button></td>
             <td><button class="botao" onclick="inserir('/')">/</button></td>
             <td><button class="botao" onclick="inserir('*')">X</button></td>
+            <td><button class="botao" onclick="inserir('-')">-</button></td>
          </tr>
          <tr>
             <td><button class="botao" onclick="inserir('7')">7</button></td>
             <td><button class="botao" onclick="inserir('8')">8</button></td>
             <td><button class="botao" onclick="inserir('9')">9</button></td>
-            <td><button class="botao" onclick="inserir('-')">-</button></td>
+            <td><button class="botao" onclick="inserir('+')">+</button></td>
          </tr>
-         <tr>  
+         <tr>
             <td><button class="botao" onclick="inserir('4')">4</button></td>
             <td><button class="botao" onclick="inserir('5')">5</button></td>
             <td><button class="botao" onclick="inserir('6')">6</button></td>
-            <td><button class="botao" onclick="inserir('+')">+</button></td>
+            <td rowspan="3"><button class="botaoVerde" onclick="calcular()" style="height: 242px;">=</button></td>
          </tr>
          <tr>
             <td><button class="botao" onclick="inserir('1')">1</button></td>
             <td><button class="botao" onclick="inserir('2')">2</button></td>
             <td><button class="botao" onclick="inserir('3')">3</button></td>
-            <td rowspan="2"><button class="botaoVerde" onclick="calcular()" style="height: 158px;">=</button></td>
          </tr>
          <tr>
-            <td colspan="2"><button class="botao" onclick="inserir('0')" style="width: 158px;">0</button></td>
-            <td><button class="botao" onclick="inserir(',')">,</button></td>
+            <td colspan="3"><button class="botao" onclick="inserir('0')" style="width: 242px;">0</button></td>
          </tr>
       </table>
    </div>
