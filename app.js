@@ -18,6 +18,7 @@ function limpar() {
 }
 
 let variavelNova; // VARIÁVEL GLOBAL
+let variavelPorcentagem; // VARIÁVEL GLOBAL
 
 function calcular() {
    variavelNova = document.getElementById("displayCalculadora").textContent;
@@ -37,6 +38,10 @@ function calcular() {
 
    if (operacao === "/") {
       variavelNova = primeiraParcela / variavelNova;
+   }
+
+   if (operacao === '%') {
+      variavelNova = primeiraParcela / 100;
    }
 
    document.getElementById("displayCalculadora").textContent = variavelNova;
