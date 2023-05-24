@@ -1,6 +1,7 @@
 function inserirNumero(num) {
    let numero = document.getElementById("displayCalculadora").textContent;
    document.getElementById("displayCalculadora").textContent = numero + num;
+   atualizarVisor();
 }
 
 let operacao; // VARIÁVEL GLOBAL
@@ -10,7 +11,7 @@ function inserirOperacao(parametro) {
    operacao = parametro;
    primeiraParcela = document.getElementById("displayCalculadora").textContent;
    primeiraParcela = parseInt(primeiraParcela);
-   limpar(); 
+   limpar();
 }
 
 function limpar() {
@@ -45,4 +46,18 @@ function calcular() {
    }
 
    document.getElementById("displayCalculadora").textContent = variavelNova;
-} 
+   atualizarVisor();
+}
+
+function atualizarVisor() {
+   let visor = document.getElementById("displayCalculadora");
+   let numero = visor.textContent;
+
+   // LIMITAR O NÚMERO DE DÍGITOS EXIBIDOS NO VISOR DA CALCULADORA
+   
+   if (numero.length > 9) {
+      numero = numero.substring(0, 9);
+   }
+
+   visor.textContent = numero;
+}

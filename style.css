@@ -48,19 +48,19 @@ html {
    cursor: pointer;
    border: none;
    font-family: 'Roboto';
-   color: white;
-   background-color: darkred;
+   color: black;
+   background-color: orangered;
 }
 
-.botaoVerde {
+.botaoIgualdade {
    width: 75px;
    margin: 3px;
    font-size: 50px;
    cursor: pointer;
    border: none;
    font-family: 'Roboto';
-   color: white;
-   background-color: green;
+   color: black;
+   background-color: orangered;
 }
 
 .botao:hover {
@@ -69,12 +69,12 @@ html {
 }
 
 .botaoLimpar:hover {
-   background-color: crimson;
+   background-color: orange;
    color: black;
 }
 
-.botaoVerde:hover {
-   background-color: limegreen;
+.botaoIgualdade:hover {
+   background-color: orange;
    color: black;
 }
 
@@ -84,11 +84,12 @@ html {
 }
 
 #displayCalculadora {
-   background-color: gainsboro;
+   background-color: black;
    width: 322px;
    height: 75px;
    margin: 7px;
    font-size: 60px;
    font-family: 'Roboto';
    text-align: center;
-}
+   color: white; 
+} 
